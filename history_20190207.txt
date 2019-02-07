@@ -1,0 +1,29 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  git clone https://gitgub.com/strazdins/RTR108
+    4  git clone https://github.com/strazdins/RTR108
+    5  ls
+    6  cd RTR108
+    7  ls
+    8  nano readme.md
+    9  ls
+   10  nano README.md
+   11  ls
+   12  lt
+   13  ls -lt
+   14  cat README.md
+   15  ls -la
+   16  nano README.md
+   17  ls -lt
+   18  git config --global user.email martins.strazdins1999@gmail.com
+   19  git add .
+   20  git commit -m "20190207_14_55_pirmais_commits"
+   21  git push origin master
+   22  nano README.md
+   23  nano git-upload
+   24  ls -lt
+   25  ./git-upload
+   26  chmod 740 git-upload
+   27  ls
+   28  history
+   29  history > history_20190207.txt
