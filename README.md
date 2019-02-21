@@ -16,7 +16,7 @@ uname --- OS nosaukums
 uname -a --- pilns OS apraksts  
 echo $0 --- shell dialekts (bash, sh, utt)  
 echo $PATH --- sistēmas ceļi
-PATH=$PATH:~/ --- papildināt sistēmas ceļu uz šo direktoriju  
+PATH=$PATH:~/ /--- papildināt sistēmas ceļu uz šo direktoriju  
 whoami --- kas es esmu sistēmā  
 pwd --- kur es esmu sistēmā  
 ls [-arguments] --- kas man ir pieejams  
