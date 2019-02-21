@@ -1,16 +1,16 @@
 # RTR108
-Studiju kursa Datormācībā (speckurss) elektroniskā klade
-## 2. nodarbība
+Studiju kursa Datormācībā (speckurss) elektroniskā klade  
+
+## 2. nodarbība  
 Publiskais lietotājs x121REB360@xxx.xxx.xx.37  
   
 ## 3. nodarbība  
 ./git-upload "commit" //bez pēdiņām commit'a nosaukums  
   
   
-  
-## Shell komandas  
-### BASH 
-help [komanda] --- komandu paskaidrojums  
+## Shell izmantošana  
+### BASH komandas  
+help [komanda] --- komandu paskaidrojums 
 man [komanda] --- komandas argumentu instrukcija  
 uname --- OS nosaukums  
 uname -a --- pilns OS apraksts  
@@ -31,16 +31,3 @@ nano --- teksta rediģēšana
 
  
 ### Skripta veidošana  
-  
-
-
-# RTR108
-Studiju kursa Datormācībā (speckurss) elektroniskā klade
-## 2. nodarbība
-Publiskais lietotājs x121REB360@xxx.xxx.xx.37  
-  
-## 3. nodarbība  
-./git-upload "commit" //bez pēdiņām commit'a nosaukums  
-
-
-
