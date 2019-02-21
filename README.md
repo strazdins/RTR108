@@ -1,10 +1,8 @@
 # RTR108
 Studiju kursa Datormācībā (speckurss) elektroniskā klade  
 
-## 2. nodarbība  
-Publiskais lietotājs x121REB360@xxx.xxx.xx.37  
-  
-## 3. nodarbība  
+## Informācija 
+Publiskais lietotājs x121REB360@xxx.xxx.xx.37    
 ./git-upload "commit" //bez pēdiņām commit'a nosaukums  
   
   
@@ -16,7 +14,7 @@ uname --- OS nosaukums
 uname -a --- pilns OS apraksts  
 echo $0 --- shell dialekts (bash, sh, utt)  
 echo $PATH --- sistēmas ceļi
-PATH=$PATH:~/ /--- papildināt sistēmas ceļu uz šo direktoriju  
+PATH=$PATH:[direktorija] --- papildināt sistēmas ceļu uz direktoriju  
 whoami --- kas es esmu sistēmā  
 pwd --- kur es esmu sistēmā  
 ls [-arguments] --- kas man ir pieejams  
