@@ -1,0 +1,32 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  sh
+    4  man pwd
+    5  ls -a
+    6  man ls
+    7  ls a
+    8  man ls
+    9  man cd
+   10  ls
+   11  cd ~
+   12  ls
+   13  cd ~/documents
+   14  cd ~/Documents
+   15  cd .
+   16  cd ~Documents
+   17  cd .
+   18  cd ..
+   19  nano mans_skripts.sh
+   20  ./mans_skripts.sh
+   21  echo $PATH
+   22  PATH=$PATH:~/
+   23  echo $PATH
+   24  mans_skripts.sh
+   25  ls -l
+   26  mans_skripts.sh
+   27  chmod 754 mans_skripts.sh
+   28  mans_skripts.sh
+   29  git clone https://github.com/strazdins/RTR108
+   30  ls
+   31  history_20190221
+   32  history > 20190221
