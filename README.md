@@ -34,8 +34,10 @@ history > [nosaukums] --- history faila izveidošana
 
  
 ### Skripta veidošana  
-#!/bin/bash  
-komanda  
-komanda  
-komanda  
-...  
+#!/bin/bash  // definē kas izpildīs skriptu  
+  
+read $[string] // jautāt cilvēka ievadi  
+echo "$[string]" // izprintēt uz ekrāna cilvēka ievadīto  
+  
+
+
