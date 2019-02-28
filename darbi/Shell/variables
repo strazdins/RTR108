@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo ""
+echo "Variable"
+echo ""
+
+NAME="Martins Starzdins"
+readonly NAME
+echo $NAME
+NAME="error"
+
+unset NAME
+echo $NAME
+
