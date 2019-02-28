@@ -34,10 +34,25 @@ history > [nosaukums] --- history faila izveidošana
 
  
 ### Skripta veidošana  
-#!/bin/bash  // definē kas izpildīs skriptu  
+#!/bin/sh  // definē kas izpildīs skriptu  
   
-read $[string] // jautāt cilvēka ievadi  
-echo "$[string]" // izprintēt uz ekrāna cilvēka ievadīto  
-  
+read $[variable] // jautāt cilvēka ievadi  
+echo "$[variable]" // izprintēt uz ekrāna cilvēka ievadīto  
+readonly [variable] // mainīgais kļūst par const  
+unset [variable] // iestata mainīgo uz 0 vērtību  
+$0 // šī skripta nosaukums  
+$1 // skripta pirmais arguments  
+$2 // skripta otrais arguments u.u.t.  
+$# // iedoto argumentu skaits skriptam  
+$* // visi argumenti ir kā viens ""  
+$@ // katrs arguments ir attdalīts ""  
+$? // pēdējās komandas izpildes status  
+$$ // procesa nr šā brīža shellā jeb ID  
+$! //procesa id pēdējam fona procesam  
+masiva_nosaukums=(var1 var2 varn) //masīva izveide  
+echo ${masiva_nosaukums[n]} // masīva printēšana, kur n ir mainīgo lokācija  
 
+
+
+Pēc tam piešķir atļauju ar chmod [] [] un ja nepieciešams iestata sistēmas ceļu ar PATH=$PATH:[]  
 
