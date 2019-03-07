@@ -1,4 +1,0 @@
-#!/bin/bash
-
-masiivs=("viens" "divi" "triis" "cetri" "pieci")
-echo "Masiivs: ${masiivs[*]}"

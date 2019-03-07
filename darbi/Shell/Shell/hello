@@ -1,5 +1,0 @@
-#!/bin/sh
-
-echo "Kā Tevi sauc?"
-read person
-echo "Hello, $person"
