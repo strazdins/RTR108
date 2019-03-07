@@ -104,3 +104,5 @@ a="abc" un b="efg"
 [ -s $file ] is true. //Checks if file has size greater than 0; if yes, then condition becomes true.  
 [ -e $file ] is true. //Checks if file exists; is true even if file is a directory but exists.  
   
+### Decision making  
+  
