@@ -8,6 +8,7 @@ Publiskais lietotājs x121REB360@xxx.xxx.xxx.37
   
 ## Shell izmantošana  
 ### BASH komandas  
+!!!ignorē [ ] !!!  
 help [komanda] --- komandu paskaidrojums 
 man [komanda] --- komandas argumentu instrukcija  
 uname --- OS nosaukums  
@@ -56,3 +57,50 @@ echo ${masiva_nosaukums[n]} // masīva printēšana, kur n ir mainīgo lokācija
 
 Pēc tam piešķir atļauju ar chmod [] [] un ja nepieciešams iestata sistēmas ceļu ar PATH=$PATH:[]  
 
+### Operatori 
+c=`expr 2 + 2` //Lai veiktu aritmētiku lietu expr !!!Ievēro atstarpes un backtick'u!!! neignorē [ ]  
+
+a = 10 un b = 20  
+
+c=`expr $a + $b` //will give c=30  
+`expr $a - $b` //will give -10  
+`expr $a \* $b` //will give 200  
+`expr $b / $a` //will give 2  
+`expr $b % $a` //will give 0  
+  
+a = $b //would assign value of b into a  
+[ $a == $b ] // would return false.  
+[ $a != $b ] //would return true.  
+
+  
+[ $a -eq $b ] //is not true. --- Equal  
+[ $a -ne $b ] //is true. --- Not equal  
+[ $a -gt $b ] //is not true. --- a > b  
+[ $a -lt $b ] //is true. --- a < b  
+[ $a -ge $b ] //is not true. --- a >= b  
+[ $a -le $b ] //is true. --- a <= b  
+  
+[ ! false ] is true. // Inverts  
+[ $a -lt 20 -o $b -gt 100 ] is true. // Logical "OR"  
+[ $a -lt 20 -a $b -gt 100 ] is false.  // Logical "AND"  
+  
+a="abc" un b="efg"  
+[ -z $a ] is not true. //Is Zero  
+[ -n $a ] is not false. //Is non-Zero    
+[ $a ] is not false. //Is not empty  
+  
+[ -b $file ] is false. //Checks if file is a block special file; if yes, then the condition becomes true.  
+[ -c $file ] is false. //Checks if file is a directory; if yes, then the condition becomes true.  
+[ -d $file ] is not true. //Checks if file is a directory; if yes, then the condition becomes true.  
+[ -f $file ] is true. //Checks if file is an ordinary file as opposed to a directory or special file; if yes, then the condition becomes true.  
+[ -g $file ] is false. //Checks if file has its set group ID (SGID) bit set; if yes, then the condition becomes true.  
+[ -k $file ] is false. //Checks if file has its sticky bit set; if yes, then the condition becomes true.  
+[ -p $file ] is false. //Checks if file is a named pipe; if yes, then the condition becomes true.  
+[ -t $file ] is false. //Checks if file descriptor is open and associated with a terminal; if yes, then the condition becomes true.  
+[ -u $file ] is false. //Checks if file has its Set User ID (SUID) bit set; if yes, then the condition becomes true.  
+[ -r $file ] is true. //Checks if file is readable; if yes, then the condition becomes true.  
+[ -w $file ] is true. //Checks if file is writable; if yes, then the condition becomes true.  
+[ -x $file ] is true. //Checks if file is executable; if yes, then the condition becomes true.  
+[ -s $file ] is true. //Checks if file has size greater than 0; if yes, then condition becomes true.  
+[ -e $file ] is true. //Checks if file exists; is true even if file is a directory but exists.  
+  
