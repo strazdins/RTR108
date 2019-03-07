@@ -1,0 +1,5 @@
+#!/bin/bash
+
+masiivs=("viens" "divi" "triis" "cetri" "pieci")
+echo "Masiivs: ${masiivs[*]}"
+echo "Masiivs: ${masiivs[0]} --- Nultais masiivs"

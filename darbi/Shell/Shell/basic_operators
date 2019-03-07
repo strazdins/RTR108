@@ -1,0 +1,16 @@
+#!/bin/bash
+
+val=`expr 2 + 2`
+echo "Total value : $val"
+
+a='10'
+b='20'
+echo "A=$a B=$b"
+val=`expr $a + $b`
+echo "Saskaitīšana A+B = $val"
+val=`expr $a \* $b`
+echo "Rezināšana A \* B = $val"
+val=`expr $b / $a`
+echo "Dalīšana B / A = $val"
+val=`expr $a % $b`
+echo "Atlikums A % B = $val"
