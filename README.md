@@ -106,3 +106,59 @@ a="abc" un b="efg"
   
 ### Decision making  
   
+Pieraksts if...fi tiek veikts šādi:  
+  
+if [ expression ]  
+then  
+   Statement(s)  
+fi  
+  
+vai  
+  
+if [ expression ]  
+then  
+   Statement(s) to be executed if expression is true  
+else  
+   Statement(s) to be executed if expression is not true  
+fi  
+  
+vai  
+  
+if [ expression 1 ]  
+then  
+   Statement(s) to be executed if expression 1 is true  
+elif [ expression 2 ]  
+then  
+   Statement(s) to be executed if expression 2 is true  
+elif [ expression 3 ]  
+then    
+   Statement(s) to be executed if expression 3 is true  
+else  
+   Statement(s) to be executed if no expression is true  
+fi  
+  
+Pieraksts case...esac tiek veikts šādi:  
+  
+case word in  
+   pattern1)  
+      Statement(s) to be executed if pattern1 matches  
+      ;;  
+   pattern2)  
+      Statement(s) to be executed if pattern2 matches  
+      ;;  
+   pattern3)  
+      Statement(s) to be executed if pattern3 matches  
+      ;;  
+   *)  
+     Default condition to be executed  
+     ;;  
+esac  
+  
+### Loop types  
+  
+
+
+
+
+
+  
